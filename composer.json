@@ -3,7 +3,7 @@
     "description": "Medium editor widget for Yii2",
     "homepage": "http://github.com/kotchuprik/yii2-medium-widget",
     "keywords": ["yii2", "medium", "wysiwyg", "editor", "redactor"],
-    "type": "yii2-medium-widget",
+    "type": "yii2-extension",
     "license": "MIT",
     "authors": [
         {
