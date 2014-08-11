@@ -1,6 +1,6 @@
 <?php
 
-namespace kotchuprik\Medium;
+namespace kotchuprik\medium;
 
 class Asset extends \yii\web\AssetBundle
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace kotchuprik\Medium;
+namespace kotchuprik\medium;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
