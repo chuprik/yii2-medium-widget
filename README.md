@@ -7,7 +7,7 @@ This widget is the wrapper for the [MediumEditor](https://github.com/daviferreir
 ### Widget
 
 ```php
-echo \kotchuprik\Medium\Widget::widget([
+echo \kotchuprik\medium\Widget::widget([
     'model' => $model,
     'attribute' => 'attribute',
 ]);
@@ -16,7 +16,7 @@ echo \kotchuprik\Medium\Widget::widget([
 ### Widget with settings
 
 ```php
-echo \kotchuprik\Medium\Widget::widget([
+echo \kotchuprik\medium\Widget::widget([
     'model' => $model,
     'attribute' => 'attribute',
     'theme' => 'bootstrap',
@@ -29,13 +29,13 @@ echo \kotchuprik\Medium\Widget::widget([
 ### ActiveForm widget
  
 ```php
-echo $form->field($model, 'attribute')->widget(\kotchuprik\Medium\Widget::className());
+echo $form->field($model, 'attribute')->widget(\kotchuprik\medium\Widget::className());
 ```
 
 ### ActiveForm widget with settings
 
 ```php
-echo $form->field($model, 'attribute')->widget(\kotchuprik\Medium\Widget::className(), [
+echo $form->field($model, 'attribute')->widget(\kotchuprik\medium\Widget::className(), [
     'theme' => 'bootstrap',
     'settings' => [
         'buttons' => ['bold', 'italic', 'quote'],
