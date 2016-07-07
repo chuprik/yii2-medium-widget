@@ -31,11 +31,11 @@ class Widget extends \yii\widgets\InputWidget
 
         $js = [];
         if (empty($this->settings)) {
-            $js[] = 'var editor = new MediumEditor(".editable");';
+            $js[] = 'var editor = new MediumEditor("#' . $this->options['id'] . '");';
         } else {
-            $js[] = 'var editor = new MediumEditor(".editable", ' . Json::encode($this->settings) . ');';
+            $js[] = 'var editor = new MediumEditor("#' . $this->options['id'] . '", ' . Json::encode($this->settings) . ');';
         }
-        $js[] = '$(".editable").on("input", function() { var $this = $(this); $($this.data("input")).val($this.html()); });';
+        $js[] = '$("#' . $this->options['id'] . '").on("input", function() { var $this = $(this); $($this.data("input")).val($this.html()); });';
 
         $view->registerJs(implode(PHP_EOL, $js));
     }
